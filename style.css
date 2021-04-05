@@ -1,0 +1,716 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header */
+
+.header {    
+    min-height: 75px;
+    background-color: rgba(13, 13, 13, 0.6);    
+    position: fixed;
+    top: 0;    
+    z-index: 200;        
+}
+
+.header__text {
+    color: #F0F0F0;    
+    font-size: 15px;
+    line-height: 23px;
+}
+
+.header__icon {
+    color: #E69B21;
+}
+
+/* навигация */
+
+#check-menu {
+    display: none;
+}
+
+.block-menu__label { 
+    display: block;     
+    width: 65px;
+    height: 60px;    
+    border-radius: 10%; 
+    position: absolute;
+    top: 10px;
+    right: 10px;      
+}
+
+.check-menu__line {    
+    width: 35px;
+    height: 2px;
+    background-color: #E1E1E1; 
+    position: absolute;
+    top: 13px;
+    left: 10px;      
+}
+
+.second-burger-line {
+    top: 22px;
+} 
+
+.third-burger-line {
+    top: 30px;
+}
+
+.fourth-burger-line {
+    top: 39px;
+}
+
+.main-menu {         
+    max-height: 0;
+    font-size: 0;    
+    transition: 0.5s all;     
+}
+
+.main-menu__text {
+    color: white;
+    text-decoration: none;           
+}
+
+#check-menu:checked ~ .main-menu {
+    max-height: 500px;
+    font-size: 17px;    
+}
+
+.main-menu__text:hover {      
+    color: white;  
+    text-decoration: none;   
+    border-bottom: 2px solid #E69B21; 
+}
+
+.main-menu__logo {
+    background-size: cover;
+    background-image: url(./res/logo_header.png);
+    height: 100px;
+    width: 160px;    
+}
+
+.header__text:hover {
+    color: #E69B21;  
+    text-decoration: none;
+}
+
+/* Section-main - секция с большими заголовками */
+
+.section-main {    
+    background-image: url(./res/main_section.png);                  
+}
+
+.section-main_size {
+    min-height: 750px;
+    padding-top: 150px; 
+}
+
+.section-main__text-welcome {    
+    font-family: 'Pacifico', cursive;     
+    font-size: 30px;       
+    line-height: 45px;
+    color: #E69B21;    
+}
+
+.section-main__text-zagolovok {    
+    font-size: 35px;
+    color: #F0F0F0;
+    line-height: 40px;
+    font-weight: 700;        
+}
+
+.section-main__text-mini {    
+    font-weight: 100;
+    font-size: 20px;
+    color: #F0F0F0;        
+}
+
+.section-main__button-left {
+    border: 1.44px solid #F0F0F0; 
+    border-radius: 86.1px; 
+    background: none;    
+    font-size: 13px;
+    line-height: 17px;
+    font-weight: 700;    
+    color: #F0F0F0;
+    padding: 13px 47px;        
+}
+
+.section-main__button-left:hover {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+
+.section-main__button-right:hover {
+    text-decoration: none;
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+
+.section-main__button-right {    
+    font-size: 18px;
+    font-weight: 600;
+    color: 000000;
+    line-height: 23px;
+    background-color: #E69B21;
+    border-radius: 119.25px;
+    padding: 18px 37px;
+    border: none;
+    box-shadow: 0 0 4px 0 #000000;
+}
+
+/* Секция с 6-ю фотографиями, по три в две линии */
+
+.section-foto__bacground_size {
+    min-height: 365px;  
+}
+
+.background-list {
+    background-image: url(./res/bg.png);
+}
+
+.background {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-foto_height {
+    min-height: 170px;
+}
+
+.section-foto__1 {       
+    background-color: #E69B21;        
+}
+
+.section-foto__2 {
+    background-image: url(./res/blockfoto1.png);    
+}
+
+.section-foto__3 {
+    background-image: url(./res/blockfoto2.png);    
+}
+
+.section-foto__4 {
+    background-image: url(./res/blockfoto3.png);    
+}
+
+.section-foto__5 {
+    background-image: url(./res/blockfoto4.png);    
+}
+
+.section-foto__6 {
+    background-image: url(./res/blockfoto5.png);    
+}
+
+.section-foto__background-white {
+    background-color: rgba( 255, 255, 255, 0.5);
+    height: 90%;
+    width: 95%;
+}
+
+.section-foto_position { 
+    position: absolute;
+    top: -56px;    
+    z-index: 100;   
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.mini-orange-button_position2 {
+    position: absolute;
+    right: 0;
+    top: 65px;
+}
+
+.section-foto__dark-block {
+    width: 50%;
+    height: 363px;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: -68px;
+    padding-left: 15%;
+    padding-right: 15%;
+    left: 18%;
+    z-index: 90;
+    box-shadow:0 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Секция с фото еловой ветки */
+
+.section-foto-elka {
+    background-image: url(./res/sectoin2.png);    
+    height: 264px;
+}
+
+/* Секция про нас */
+
+/* Секция про нас - первая линия */
+
+.section-about-us__background_size {
+    height: 960px;        
+}
+
+.section-about-us__fon {
+    min-height: 295px;    
+    background-image: url(./res/bgtwo.png);    
+}
+
+.section-about-us_position {   
+    position: absolute;
+    top: -55px;
+    padding-right: 15%;
+    padding-left: 15%;    
+}
+
+.section-about-us__foto1_position {
+    position: relative;    
+    top:-20px;  
+    left: 20px;  
+}
+
+.section-about-us__foto1 {
+    background-image: url(./res/maskov.png);
+}
+
+.mini-orange-button {
+    height: 23px;
+    width: 23px;
+    border: none;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E69B21; 
+    color: black;   
+}
+
+.mini-orange-button:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.mini-orange-button_position {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.text-title {
+    font-size: 26px;
+    line-height: 49px;    
+    color: #F0F0F0; 
+    font-weight: 600;       
+}
+
+.text-description {
+    font-size: 16px;    
+    color: #F0F0F0; 
+    font-weight: 400;        
+}
+
+/* Секция про нас - вторая линия */
+
+.section-about-us__yslygi {
+    min-height: 295px;
+}
+
+/* Секция про нас - третья линия с тремя фото */
+
+.section-about-us__line-three-foto {
+    min-height: 220px;
+}
+
+.section-about-us__foto2 {
+    background-image: url(./res/block1m.png);    
+}
+
+.section-about-us__foto3 {
+    background-image: url(./res/block2m.png);    
+}
+
+.section-about-us__foto4 {
+    background-image: url(./res/block3m.png);    
+}
+
+.section-foto__text {    
+    font-size: 19px;
+    color: #000000;
+}
+
+.section-foto__text2 {    
+    font-size: 19px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.section-foto__text2:hover {
+    text-decoration: none;
+    color: #E69B21;
+}
+
+.text-subtitle {
+    font-size: 20px;
+    font-weight: 600;
+    color: #151515;
+}
+
+/* Секция с фотографиями зала */
+
+.section-zal_height {
+    min-height: 1043px;   
+}
+
+.section-zal {
+    background-image: url(./res/bgmainqure.png);    
+}
+
+.section-zal__container {
+    min-height: 950px;    
+}
+
+.section-zal__polosa {
+    border-top: white 3px solid;
+    border-bottom: white 1px solid;
+    height: 6px;
+}
+
+.section-zal__text-ysadba {
+    font-size: 26px;
+    color: #E69B21;
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+}
+
+.section-zal__text-dom {
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 41px;
+    color: #020202;
+    text-align: center;
+}
+
+.a {
+    border: green 2px solid;
+}
+
+.section-zal__text-for-button {    
+    font-size: 15px;
+}
+
+.section-zal__foto1 {
+    background-image: url(./res/zal1.png);
+    min-height: 600px;
+    background-repeat: no-repeat;    
+}
+
+.section-zal__radial {
+    height: 100%;
+    width: 100%;
+    background-image: url(./res/radial.png);
+}
+
+.section-zal__foto2 {
+    background-image: url(./res/zal2.png);
+    min-height: 300px;    
+}
+
+.section-zal__foto3 {
+    background-image: url(./res/zal3.png);
+    min-height: 300px;    
+}
+
+.section-zal__text-zal {
+    font-size: 33px;
+    line-height: 52px;    
+    color: #E9E9E9;
+    font-weight: 700;
+}
+
+.section-zal__text-zal:hover {
+    text-decoration: none;
+    color: #E69B21;
+}
+
+.section-zal__text-mini {    
+    font-size: 20px;
+    color: #E9E9E9;
+    font-weight: 200;
+}
+
+/* Секция - форма по бронированию */
+
+.section-form_size {
+    min-height: 700px;
+}
+
+.text_color-black {
+    color: black;
+}
+
+.form__input {
+    border: #000000 1px solid;
+    box-shadow: 0 0px 4px 0px #5e5959;
+    font-size: 13px;        
+}
+
+.form__button {
+    font-size: 18px;
+    font-weight: 600;
+    color: 000000;
+    line-height: 23px;
+    background-color: #E69B21;
+    border-radius: 119.25px;
+    padding: 15px 20px;
+    border: none;
+    box-shadow: 0 0 4px 0 #000000;
+}
+
+.form__button:hover {
+    background-color: white;
+}
+
+/* Секция - FOOTER */
+
+.footer {
+    background-color: #131313;
+}
+
+.footer_size { 
+    min-height: 300px;
+}
+
+.text-footer-subtitle {
+    font-size: 16px;
+    line-height: 23px;
+    color: white;
+}
+
+.text-footer-description {
+    font-size: 13px;
+    line-height: 20px;
+    color: white;
+}
+
+.text_color-white {
+    color: white;
+}
+
+.text_color-orange {
+    color:  #E69B21;
+}
+
+.text-footer-description:hover {
+    color: #F0F0F0;
+    text-decoration: none;
+}
+
+.fa:hover {
+    color: #E69B21;
+}
+
+/* Секция для мобильника о нас*/
+
+.section-about-us-mobile_size {
+    min-height: 1750px;    
+}
+
+.section-about-us-mobile_position-size {
+    min-height: 500px;
+    position: absolute;
+    top: -55px;
+    margin-left: 5%;
+    margin-right: 5%; 
+}
+
+.section-about-us-mobile__background-border {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.section-about-us-mobile__polosa {
+    border-top: #2E1A1A 3px solid;
+    border-bottom: #2E1A1A 1px solid;
+    height: 6px;
+}
+
+.section-about-us-mobile__polosamini {
+    border-bottom: 5px solid #E69B21;
+    width: 60px;
+}
+
+/* Секция для мобильника с каруселью */
+
+.section-with-karusel-mobile_size {
+    min-height: 600px;    
+}
+
+.strelka1 {
+    width: 30px;
+    height: 30px;
+    background-image: url(./res/strelka1.png);  
+}
+
+.strelka2 {    
+    width: 30px;
+    height: 30px;
+    background-image: url(./res/strelka2.png);    
+}
+
+@media (min-width: 330px) {
+    .section-about-us-mobile_size {
+        min-height: 1700px;        
+    }
+}
+
+@media (min-width: 365px) {
+    .section-about-us-mobile_size {
+        min-height: 1600px;        
+    }
+}
+
+@media (min-width: 440px) {
+    .section-about-us-mobile_size {
+        min-height: 1500px;        
+    }
+}
+
+@media (min-width: 490px) {
+    .section-about-us-mobile_size {
+        min-height: 1400px;        
+    }
+}
+
+@media (min-width: 576px) {
+    .section-main__text-welcome {        
+        font-size: 40px;               
+    }
+    
+    .section-main__text-zagolovok {        
+        font-size: 50px;  
+        line-height: 70px;              
+    }
+
+    .text-title {
+        font-size: 36px;
+        line-height: 49px;           
+    }
+
+    .text-subtitle {
+        font-size: 26px;
+        font-weight: 500;        
+    }
+
+    .text-description {
+        font-size: 13px;              
+    }
+
+    .section-about-us-mobile_size {
+        min-height: 1200px;        
+    }    
+}
+
+@media (min-width: 768px) {
+    .section-main__text-welcome {        
+        font-size: 47px;               
+    }
+    
+    .section-main__text-zagolovok {        
+        font-size: 71px;  
+        line-height: 98px;              
+    }
+
+    .section-zal__text-ysadba {
+        font-size: 34px;
+        line-height: 52px;        
+    }
+    
+    .section-zal__text-dom {
+        font-size: 30px;        
+        color: #F0F0F0;        
+    }
+
+    .text_color-black {
+        color: black;
+    }  
+    
+    .form_size  {       
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
+
+@media (min-width: 992px) {
+    .header {    
+        min-height: 95px;             
+    }
+
+    .section-foto__text {    
+        font-size: 26px;        
+    }
+
+    .section-foto__text2 {
+        font-size: 26px;
+    }   
+
+    .section-about-us__line-three-foto {
+        min-height: 250px;
+    }
+
+    .text-footer-subtitle {
+        font-size: 21px; 
+        line-height: 29px;       
+    }
+    
+    .text-footer-description {
+        font-size: 17px; 
+        line-height: 23px;      
+    }
+
+    .main-menu {  
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;   
+        font-size: 17px;                    
+    }
+
+    .section-zal__container {
+        min-height: 950px;  
+        padding-left: 15%;
+        padding-right: 15%;   
+    }   
+    
+    .section-zal__text-zal {
+        font-size: 53px;
+        line-height: 72px;      
+    }
+
+    .section-zal__text-mini {    
+        font-size: 26px;       
+    }
+}
+
+@media (min-width: 1200px) {
+    .section-about-us__line-three-foto {
+        min-height: 290px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

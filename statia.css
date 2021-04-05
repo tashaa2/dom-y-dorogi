@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header */
+
+.header {    
+    min-height: 75px;
+    background-color: rgba(13, 13, 13, 0.6);    
+    position: fixed;
+    top: 0;    
+    z-index: 200;        
+}
+
+.header__text {
+    color: #F0F0F0;    
+    font-size: 15px;
+    line-height: 23px;
+}
+
+.header__icon {
+    color: #E69B21;
+}
+
+/* навигация */
+
+#check-menu {
+    display: none;
+}
+
+.block-menu__label { 
+    display: block;     
+    width: 65px;
+    height: 60px;    
+    border-radius: 10%; 
+    position: absolute;
+    top: 10px;
+    right: 10px;      
+}
+
+.check-menu__line {    
+    width: 35px;
+    height: 2px;
+    background-color: #E1E1E1; 
+    position: absolute;
+    top: 13px;
+    left: 10px;      
+}
+
+.second-burger-line {
+    top: 22px;
+} 
+
+.third-burger-line {
+    top: 30px;
+}
+
+.fourth-burger-line {
+    top: 39px;
+}
+
+.main-menu {         
+    max-height: 0;
+    font-size: 0;    
+    transition: 0.5s all;     
+}
+
+.main-menu__text {
+    color: white;
+    text-decoration: none;           
+}
+
+#check-menu:checked ~ .main-menu {
+    max-height: 500px;
+    font-size: 17px;    
+}
+
+.main-menu__text:hover {      
+    color: white;  
+    text-decoration: none;   
+    border-bottom: 2px solid #E69B21; 
+}
+
+.main-menu__logo {
+    background-size: cover;
+    background-image: url(./res/logo_header.png);
+    height: 100px;
+    width: 160px;    
+}
+
+.header__text:hover {
+    color: #E69B21;  
+    text-decoration: none;
+}
+
+/* Секция - FOOTER */
+
+.footer {
+    background-color: #131313;
+}
+
+.footer_size { 
+    min-height: 300px;
+}
+
+.text-footer-subtitle {
+    font-size: 16px;
+    line-height: 23px;
+    color: white;
+}
+
+.text-footer-description {
+    font-size: 13px;
+    line-height: 20px;
+    color: white;
+}
+
+.text_color-white {
+    color: white;
+}
+
+.text_color-orange {
+    color:  #E69B21;
+}
+
+.text-footer-description:hover {
+    color: #F0F0F0;
+    text-decoration: none;
+}
+
+.fa:hover {
+    color: #E69B21;
+}
+
+/* Секция статья */
+
+.background {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-statia {
+    background-image: url(./res/bg.png);
+    padding-top: 100px;
+}
+
+.section-statia_size {
+    min-height: 1600px;
+}
+
+.section-padding {
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.section-blog__ssylka:hover {
+    text-decoration: none;         
+}
+
+.block-black__text-maxi {
+    font-size: 20px;
+    font-weight: 100;
+    color: #E9E9E9;
+    text-decoration: none;
+    line-height: 27px;
+}
+
+.block-black__text-maxi:hover {    
+    color: #E69B21;    
+} 
+
+.block-black__strelka {
+    width: 30px;
+    height: 20px;
+    color: #E69B21;
+    text-decoration: none;
+}
+
+.section-statia__img1 {
+    background-image: url(./res/icon/f.png);
+}
+
+.section-statia__img2 {
+    background-image: url(./res/icon/2.png);
+}
+
+.section-statia__img3 {
+    background-image: url(./res/icon/G.png);
+}
+
+.section-statia__img_size {
+    width: 40px;
+    height: 40px;
+}
+
+.section-statia__img_size:hover {
+    width: 50px;
+    height: 50px;
+}
+
+.text-title {
+    font-size: 30px;
+    color:#2E1A1A;
+    font-weight: 600;
+    line-height: 45px;
+}
+
+.text-subtitle {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color:#2E1A1A;
+}
+
+.text-subtitle_weight {
+    font-weight: 600;
+}
+
+.text-description {
+    font-size: 17px;
+    color: black;
+    font-weight: 400;
+}
+
+.section-statia__polosa-black {
+    border-bottom: 1px solid #C4C4C4;
+    width: 100%;
+    height: 2px;    
+}
+
+.section-statia__main {
+    min-height: 600px;
+}
+
+.section-statia__polosa-orange {
+    width: 90px;
+    height: 2px;
+    border-bottom: 4px solid #E69B21;
+}
+
+.block-black {
+    min-height: 400px;    
+    background-color: #252525;    
+}
+
+.block-black__container {
+    width: 65%;
+    height: 100%;
+}
+
+.section-blog__img {
+    background-image: url(./res/biznes1.png);
+    height: 363px;
+    width: 75%;
+    position: absolute;
+    top: 18px;
+    left: 70%;
+}
+
+.text-title-orange {
+    font-size: 20px;
+    color: #E69B21;
+    font-weight: 700;
+    line-height: 25px;
+}
+
+.block-black__text-subtitle {
+    font-size: 18px;
+    font-weight: 100;
+    color: #E9E9E9;
+}
+
+.block-black__data {
+    font-size: 15px;
+    font-weight: 100;
+    color: #E9E9E9;
+    line-height: 18px;
+    border-top: 1px solid #C4C4C4;
+}
+
+@media (min-width: 768px) {    
+    
+    .text-subtitle {
+        font-size: 23px;
+        line-height: 31px;        
+    }  
+    
+    .section-statia__img_size {
+        width: 72px;
+        height: 72px;
+    }
+
+    .section-statia__img_size:hover {
+        width: 82px;
+        height: 82px;
+    }
+}
+
+@media (min-width: 992px) {
+    .text-title {
+        font-size: 60px;        
+        line-height: 75px;
+    } 
+    
+    .header {    
+        min-height: 95px;             
+    }
+
+    .main-menu {  
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;   
+        font-size: 17px;                    
+    }
+
+    .section-statia {        
+        padding-top: 120px;
+    }
+
+    .section-statia_size {
+        min-height: 1500px;
+    }
+
+    .section-padding {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .block-black_margin-left {
+        margin-left: 17%;
+    }    
+
+    .block-black {
+        min-height: 283px; 
+    }
+
+    .section-blog__img {        
+        height: 280px;        
+    }
+
+    .text-title-orange {
+        font-size: 14px;       
+        line-height: 18px;
+    }
+
+    .block-black__text-subtitle {
+        font-size: 13px;        
+    }
+
+    .block-black__data {
+        font-size: 11px;        
+        line-height: 14px;        
+    }   
+    
+    .text-footer-description {
+        font-size: 17px; 
+        line-height: 23px;      
+    }
+
+    .text-footer-subtitle {
+        font-size: 21px; 
+        line-height: 29px;       
+    }
+}
+
+
+

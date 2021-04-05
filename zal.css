@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header */
+
+.header {    
+    min-height: 75px;
+    background-color: rgba(13, 13, 13, 0.6);    
+    position: fixed;
+    top: 0;    
+    z-index: 200;        
+}
+
+.header__text {
+    color: #F0F0F0;    
+    font-size: 15px;
+    line-height: 23px;
+}
+
+.header__icon {
+    color: #E69B21;
+}
+
+/* навигация */
+
+#check-menu {
+    display: none;
+}
+
+.block-menu__label { 
+    display: block;     
+    width: 65px;
+    height: 60px;    
+    border-radius: 10%; 
+    position: absolute;
+    top: 10px;
+    right: 10px;      
+}
+
+.check-menu__line {    
+    width: 35px;
+    height: 2px;
+    background-color: #E1E1E1; 
+    position: absolute;
+    top: 13px;
+    left: 10px;      
+}
+
+.second-burger-line {
+    top: 22px;
+} 
+
+.third-burger-line {
+    top: 30px;
+}
+
+.fourth-burger-line {
+    top: 39px;
+}
+
+.main-menu {         
+    max-height: 0;
+    font-size: 0;    
+    transition: 0.5s all;     
+}
+
+.main-menu__text {
+    color: white;
+    text-decoration: none;           
+}
+
+#check-menu:checked ~ .main-menu {
+    max-height: 500px;
+    font-size: 17px;    
+}
+
+.main-menu__text:hover {      
+    color: white;  
+    text-decoration: none;   
+    border-bottom: 2px solid #E69B21; 
+}
+
+.main-menu__logo {
+    background-size: cover;
+    background-image: url(./res/logo_header.png);
+    height: 100px;
+    width: 160px;    
+}
+
+.header__text:hover {
+    color: #E69B21;  
+    text-decoration: none;
+}
+
+/* Секция - FOOTER */
+
+.footer {
+    background-color: #131313;
+}
+
+.footer_size { 
+    min-height: 300px;
+}
+
+.text-footer-subtitle {
+    font-size: 16px;
+    line-height: 23px;
+    color: white;
+}
+
+.text-footer-description {
+    font-size: 13px;
+    line-height: 20px;
+    color: white;
+}
+
+.text_color-white {
+    color: white;
+}
+
+.text_color-orange {
+    color:  #E69B21;
+}
+
+.text-footer-description:hover {
+    color: #F0F0F0;
+    text-decoration: none;
+}
+
+.fa:hover {
+    color: #E69B21;
+}
+
+/* Страница зал */
+
+.background {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-title {
+    font-size: 26px;
+    line-height: 49px;    
+    color: #F0F0F0; 
+    font-weight: 600;       
+}
+
+.section-padding {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* Карусель */
+
+.carousel {
+    margin-top: 20px;
+}
+.item .thumb {
+    width: 25%;
+    cursor: pointer;
+    float: left;
+}
+.item .thumb img {
+    width: 100%;
+    margin: 2px;
+}
+.item img {
+    width: 100%; 
+}
+.carousel__strelki {
+    position: absolute;
+    top: 38%;
+}
+.strelka1 {
+    width: 30px;
+    height: 30px;
+    background-image: url(./res/strelka1.png);  
+}
+.strelka2 {    
+    width: 30px;
+    height: 30px;
+    background-image: url(./res/strelka2.png);    
+}
+
+
+
+
+.section-zal {
+    background-image: url(./res/bg.png);
+}
+
+.section-zal_size {
+    min-height: 1300px;
+    padding-top: 80px;
+}
+
+.text-zal {
+    font-size: 30px;
+    line-height: 68px;
+    font-weight: 700;
+}
+
+.section-galereya__polosa {
+    border-top: rgb(0, 0, 0) 3px solid;
+    border-bottom: rgb(0, 0, 0) 1px solid;
+    height: 6px;
+}
+
+.text_color-black {
+    color: black;
+} 
+
+.text-subtitle {
+    font-size: 20px;
+    color: #2E1A1A;    
+    font-weight: 500;
+}
+
+.text-description {
+    font-size: 17px;
+    color: #6C6C6C;    
+    font-weight: 500;
+}
+
+.section-zal__border {
+    border: 1px solid #E69B21;    
+}
+
+.text-border {
+    font-size: 17px;
+    color: #2E1A1A;     
+    font-weight: 500;
+    line-height: 23px;
+}
+
+.text-border-big {
+    font-size: 40px;
+    color: #2E1A1A;     
+    font-weight: 500;
+    line-height: 49px;    
+}
+
+@media (min-width: 576px) {
+
+    .text-title {
+        font-size: 36px;
+        line-height: 49px;           
+    }     
+}
+
+@media (min-width: 768px) {
+    .text-zal {
+        font-size: 50px;       
+    }
+}
+
+@media (min-width: 992px) {   
+    .text-footer-subtitle {
+        font-size: 21px; 
+        line-height: 29px;       
+    }
+    
+    .text-footer-description {
+        font-size: 17px; 
+        line-height: 23px;      
+    }
+
+    .section-padding {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .section-zal_size { 
+        min-height: 1500px;      
+        padding-top: 120px;
+    }
+
+    .section-zal__block-text_padding {
+        padding-top: 300px;    
+    }  
+    
+    .header {    
+        min-height: 95px;             
+    }
+
+    .main-menu {  
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;   
+        font-size: 17px;                    
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

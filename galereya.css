@@ -1,0 +1,521 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header */
+
+.header {    
+    min-height: 75px;
+    background-color: rgba(13, 13, 13, 0.6);    
+    position: fixed;
+    top: 0;    
+    z-index: 200;        
+}
+
+.header__text {
+    color: #F0F0F0;    
+    font-size: 15px;
+    line-height: 23px;
+}
+
+.header__icon {
+    color: #E69B21;
+}
+
+/* навигация */
+
+#check-menu {
+    display: none;
+}
+
+.block-menu__label { 
+    display: block;     
+    width: 65px;
+    height: 60px;    
+    border-radius: 10%; 
+    position: absolute;
+    top: 10px;
+    right: 10px;      
+}
+
+.check-menu__line {    
+    width: 35px;
+    height: 2px;
+    background-color: #E1E1E1; 
+    position: absolute;
+    top: 13px;
+    left: 10px;      
+}
+
+.second-burger-line {
+    top: 22px;
+} 
+
+.third-burger-line {
+    top: 30px;
+}
+
+.fourth-burger-line {
+    top: 39px;
+}
+
+.main-menu {         
+    max-height: 0;
+    font-size: 0;    
+    transition: 0.5s all;     
+}
+
+.main-menu__text {
+    color: white;
+    text-decoration: none;           
+}
+
+#check-menu:checked ~ .main-menu {
+    max-height: 500px;
+    font-size: 17px;    
+}
+
+.main-menu__text:hover {      
+    color: white;  
+    text-decoration: none;   
+    border-bottom: 2px solid #E69B21; 
+}
+
+.main-menu__logo {
+    background-size: cover;
+    background-image: url(./res/logo_header.png);
+    height: 100px;
+    width: 160px;    
+}
+
+.header__text:hover {
+    color: #E69B21;  
+    text-decoration: none;
+}
+
+/* Секция - FOOTER */
+
+.footer {
+    background-color: #131313;
+}
+
+.footer_size { 
+    min-height: 300px;
+}
+
+.text-footer-subtitle {
+    font-size: 16px;
+    line-height: 23px;
+    color: white;
+}
+
+.text-footer-description {
+    font-size: 13px;
+    line-height: 20px;
+    color: white;
+}
+
+.text_color-white {
+    color: white;
+}
+
+.text_color-orange {
+    color:  #E69B21;
+}
+
+.text-footer-description:hover {
+    color: #F0F0F0;
+    text-decoration: none;
+}
+
+.fa:hover {
+    color: #E69B21;
+}
+
+
+/* Страница галерея */
+
+.background {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-galereya {
+    background-image: url(./res/bg.png); 
+    padding-top: 80px;   
+}
+
+.section_padding {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.text-title {
+    font-size: 26px;
+    line-height: 49px;    
+    color: #F0F0F0; 
+    font-weight: 600;       
+}
+
+.section-galereya_size {
+    min-height: 1300px;
+}
+
+.a {
+    border: 2px solid green;
+}
+.background__koltso {
+    background-image: url(./res/koltso.png);    
+}
+
+.background__radial {
+    background-image: url(./res/radial.png);    
+}
+
+.background__svadba {
+    background-image: url(./res/svadba.png);    
+}
+
+.background__svadba2 {
+    background-image: url(./res/svadba2.png);    
+}
+
+.background__svadba3 {
+    background-image: url(./res/svadba3.png);    
+}
+
+.radial_position {
+    width: 100%;
+    height: 100%;
+    position: absolute;    
+}
+
+.koltso_position {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 25%;
+    left: 30%;
+}
+
+.text-subtitle-orange {
+    font-family: Pacifico;
+    font-size: 35px;
+    line-height: 40px;    
+    color: #E69B21;
+}
+
+.background__ruki {
+    background-image: url(./res/ruki.png);
+}
+
+.ruki_position {
+    width: 135px;
+    height: 70px;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+}
+
+.background__biznes {
+    background-image: url(./res/biznes1.png);    
+}
+
+.background__biznes2 {
+    background-image: url(./res/biznes2.png);    
+}
+
+.background_height {
+    height: 350px;
+}
+
+.background__biznes3 {
+    background-image: url(./res/biznes3.png);   
+}
+
+.background__microfon {
+    background-image: url(./res/microfon.png);
+}
+
+.microfon_position {
+    width: 80px;
+    height: 101px;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+}
+
+.background__microfon1 {
+    background-color: #C4C4C4;
+}
+
+.background__microfon2 {
+    background-color: #BA4949;    
+}
+
+.background__microfon3 {
+    background-color: #421616;    
+}
+
+/* Карусель */
+
+.carousel {
+    margin-top: 20px;
+}
+.item .thumb {
+    width: 25%;
+    cursor: pointer;
+    float: left;
+}
+.item .thumb img {
+    width: 100%;
+    margin: 2px;
+}
+.item img {
+    width: 100%; 
+}
+.carousel__strelki {
+    position: absolute;
+    top: 38%;
+}
+.strelka1 {
+    width: 30px;
+    height: 30px;
+    background-image: url(./res/strelka1.png);  
+}
+
+.strelka2 {    
+    width: 30px;
+    height: 30px;
+    background-image: url(./res/strelka2.png);    
+}
+
+
+.section-galereya__polosa {
+    border-top: rgb(0, 0, 0) 3px solid;
+    border-bottom: rgb(0, 0, 0) 1px solid;
+    height: 6px;
+}
+
+.text_color-black {
+    color: black;
+}  
+
+.navbar__border-bottom {
+    border-bottom: #E69B21 2px solid;
+}
+
+.section-galereya__blockfoto1 {
+    height: 300px;
+}
+
+.background_height {
+    height: 150px;
+}
+
+@media (min-width: 420px) {
+    .koltso_position {        
+        left: 35%;
+    }
+
+    .ruki_position {        
+        left: 30%;
+    }
+
+    .microfon_position {        
+        left: 40%;
+    }
+}
+
+@media (min-width: 500px) {
+    .koltso_position {        
+        left: 38%;
+    }
+
+    .ruki_position {        
+        left: 33%;
+    }    
+}
+
+@media (min-width: 576px) { 
+    .text-title {
+        font-size: 36px;
+        line-height: 49px;           
+    }
+    
+    .koltso_position { 
+        width: 200px;
+        height: 200px;              
+        top: 25%;
+        left: 30%;
+    }
+
+    .ruki_position {
+        width: 235px;
+        height: 121px;               
+        top: 30%;
+        left: 26%;
+    }
+    
+    .microfon_position {
+        width: 140px;
+        height: 181px;              
+        top: 30%;
+        left: 35%;
+    }
+    
+    .section-galereya_size {
+        min-height: 1500px;
+    }  
+    
+    .section-galereya__blockfoto1 {
+        height: 500px;
+    }
+    
+    .background_height {
+        height: 250px;
+    }
+}
+
+@media (min-width: 768px) { 
+    .koltso_position {
+        width: 345px;
+        height: 345px;   
+        left: 25%;
+    }  
+
+    .ruki_position {
+        width: 435px;
+        height: 221px;    
+        left: 20%;
+    }
+
+    .microfon_position {
+        width: 240px;
+        height: 281px;
+    }   
+    
+    .section-galereya__blockfoto1 {
+        height: 700px;
+    }
+
+    .background_height {
+        height: 350px;
+    }     
+}
+
+@media (min-width: 992px) {   
+    .text-footer-subtitle {
+        font-size: 21px; 
+        line-height: 29px;       
+    }
+    
+    .text-footer-description {
+        font-size: 17px; 
+        line-height: 23px;      
+    }
+
+    .section-galereya {        
+        padding-top: 130px;   
+    }
+
+    .header {    
+        min-height: 95px;             
+    }
+
+    .main-menu {  
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;   
+        font-size: 17px;                    
+    }
+
+    .koltso_position {        
+        top: 10%;        
+        left: 8%;
+        width: 245px;
+        height: 245px;
+    }
+
+    .ruki_position { 
+        top: 25%;         
+        left: 5%;
+        width: 235px;
+        height: 121px;
+    }
+
+    .microfon_position {
+        top: 15%;
+        left: 25%; 
+        width: 140px;
+        height: 181px;        
+    }    
+
+    .section-galereya__blockfoto1 {
+        height: 350px;
+    }
+
+    .background_height {
+        height: 175px;
+    } 
+    
+    .section-galereya_size {
+        min-height: 1300px;
+    } 
+}
+
+@media (min-width: 1100px) {
+    .koltso_position {          
+        left: 13%;
+    }
+
+    .ruki_position {              
+        left: 10%;
+    }
+
+    .microfon_position {       
+        left: 30%;        
+    }   
+    
+    .section-galereya_size {
+        min-height: 1400px;
+    } 
+}
+
+@media (min-width: 1200px) {
+    .koltso_position {
+        top: 10%;       
+        left: 16%;
+    }
+
+    .ruki_position {       
+        left: 17%;
+    }
+    
+    .microfon_position {
+        top: 15%;        
+        left: 28%;
+    }    
+
+    .section-galereya_size {
+        min-height: 1600px;
+    } 
+}
+
+
+
+
+
+
+
+
+
+
+
+
